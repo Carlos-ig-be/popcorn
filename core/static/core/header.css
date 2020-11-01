@@ -1,0 +1,224 @@
+
+/*Contenido general*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+  	
+	color: #000;
+	background: #E6E6E6;
+	font-family: Arial;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h3{
+	color: #707171;
+}
+
+hr {
+    display: inline-block;
+    width: 10%;
+    border-color: #3F3F3F;
+    border-width: 2px;
+    border-style: solid;
+    margin: 20px 0 0 0;
+}
+
+.content {
+	background: #fff;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.container{
+    width: 100%;
+}
+
+/*Cotenido por secciones*/
+/*PRIMERA BARRA*/
+header .Menu ul li{
+    color: #fff;
+    padding-left: 10px;
+    display: inline-block;
+}
+header .img-logo {
+    display: block;
+    max-width: 35%;
+    align-self: flex-start;
+}
+header .Menu ul li a{
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    padding-left: 10px;
+}    
+/*SEGUNDA BARRA*/
+header .EncabezadoSuperior {
+    color: #fff;
+    font-family: Arial;
+    background: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+header .EncabezadoSuperior h1{
+    font-size: 0px;
+}
+/*Imagen y Header Inferior*/
+.BannerImagen, .EncabezadoInferior {
+    background: #3a3a3a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BannerImagen {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;   
+}
+.BannerImagen ul{
+    display: flex;
+    width: 150%;
+    animation: cambio 10s infinite;    
+}
+.BannerImagen ul li img{
+    width: 95%;
+    margin: 5% 80% -20% 60%;
+}
+
+@keyframes cambio {
+    0%{margin: 0;}
+    
+    30%{margin-left: 29%;}
+    50%{margin-left: -80%;}
+}
+
+header .img-logo{
+    display: block;
+    max-width: 25%;
+    align-self: flex-start;
+}
+
+header .EncabezadoInferior{
+	display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*REDES CONTACTANOS*/
+header .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .social a {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header .facebook {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: #fff;
+   
+}
+
+header .twitter {
+    padding: 10px 12px;
+    border-radius: 20px;
+    background: #fff;
+}
+header .youtube {
+    padding: 10px 12px;
+    border-radius: 20px;
+    background: #fff;
+}
+header .gmail {
+    padding: 10px 12px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+ /*Final de pagina: Parte de Desarrollo de software*/
+ footer {
+    background: rgb(223, 219, 219);
+    color: #585b5c;
+    font-weight: bold;
+    display: flex;
+    padding-top: 1px;
+    padding-bottom: 2rem;
+    padding-left: 15px;
+}
+
+/*Vista de un celular*/
+@media (max-width: 550px){ 
+
+
+    header .EncabezadoSuperior ul li p{
+        font-size: 0.6em;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header .img-logo{
+            display: block;
+            max-width: 80%;
+            align-self: center;
+    }
+
+    header .EncabezadoInferior {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    header .Menu {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header .Menu ul li{
+        background: #000000;
+        display: block;
+        text-align: center;
+        list-style: none;
+        padding: 5px 0;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    header .Menu ul li a{
+        text-decoration: none;
+        padding-left: 10px;
+    }
+}

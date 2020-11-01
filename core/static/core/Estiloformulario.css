@@ -1,0 +1,131 @@
+/* estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.alert{
+    display: block;
+    padding: 12px 20px;
+    background: #f8d7da;
+    color: #721c24;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+}
+.img-logo {
+    display: block;
+    max-width: 50%;
+    align-self: flex-start;
+    display:block;
+    margin:auto;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    background: rgb(156, 150, 150);
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.contenedor h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #080808;
+}
+
+.contenido{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.contenido .info,
+.contenido .formulario{
+    width: 100%;
+}
+
+
+/*Estilos formulario*/
+
+.formulario{
+    padding-left: 10px;
+}
+
+.formulario input[type='text'],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: rgb(73, 67, 67);
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    outline: 0;
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.formulario input[type='text']:focus,
+.formulario textarea:focus{
+    border: 1px solid #161817;
+}
+
+.formulario button{
+    padding: 12px 30px;
+    border: transparent;
+    background: #151817;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+a{
+color: rgb(239, 240, 241);
+}
+
+@media (max-width: 520px){
+   .contenedor{
+       padding: 40px 20px;
+   }
+
+   .contenido .info,
+   .contenido .formulario{
+       width: 100%;
+       padding: 0px;
+   }
+
+   .contenido .info{
+       margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 800px){
+  
+    .contenido .info,
+    .contenido .formulario{
+        width: 100%;
+        padding: 0px;
+    }
+ 
+    .contenido .info{
+        margin-bottom: 30px;
+    }
+ }

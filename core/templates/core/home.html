@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'core/'%}flexboxgrid.min.css">
+    <link rel="stylesheet" href="{% static 'core/'%}header.css">
+    <link rel="stylesheet" href="{% static 'core/'%}flex.css">
+    <link rel="stylesheet" href="{% static 'core/'%}medio.css">
+    <link rel="stylesheet" href="{% static 'core/'%}https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/'%}form.css" media="all"> 
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'core/'%}/Imagenes/popcorn.png"/>
+    <title>PopCorn</title>
+</head>
+<body>
+        <!-- Encabezado -->
+        <header class="container">
+            <!-- Header Superior -->
+            <div class="EncabezadoSuperior">
+                <img class="img-logo" src="{% static 'core/'%}Imagenes/Logo.png" alt="PopCorn">
+                <!-- Menu Izquierdo -->
+                <nav class="Menu">
+                        <ul>
+                            <li><a class="even" href="{% static 'core/'%}PopCorn.html">Inicio</a></li>
+                            <li><a class="odd" href="{% static 'core/'%}Error.html">Quienes somos</a></li>
+                            <li><a class="even" href="{% static 'core/'%}Error.html">Servicios</a></li>
+                            <li><a class="odd" href="formulario.html">Contáctanos</a></li>
+                        </ul>
+                </nav>
+            </div>
+            <!--Imagen-->
+                <div class="BannerImagen">
+			        <ul>
+                        <li><img src="{% static 'core/'%}Imagenes/Peliculas/it.jpg" alt=""></li>
+                        <li><img src="{% static 'core/'%}Imagenes/Peliculas/narnia.jpg" alt=""></li>
+                        <li><img src="{% static 'core/'%}Imagenes/Peliculas/4fantasticos.jpg" alt=""></li>
+                        <li><img src="{% static 'core/'%}Imagenes/Peliculas/avatar.jpg" alt=""></li>
+                        <li><img src="{% static 'core/'%}Imagenes/Peliculas/ole.jpg" alt=""></li>
+                        <li><img src="{% static 'core/'%}Imagenes/Peliculas/spiderman.jpg" alt=""></li>
+                        <li><img src="{% static 'core/'%}Imagenes/Peliculas/vengadores.jpg" alt=""></li>
+                    </ul>	
+                </div>
+            <!-- Header Inferior-->
+                <div class="EncabezadoInferior">
+                    <p>+ 56 9 58614822</p>
+                    <p class="txt">CINE EN CASA GRATIS</p>
+                    <div class="social">
+                        <a class="rsocial facebook" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>   
+                        <a class="rsocial twitter" href="https://www.twitter.com" ><i class="fab fa-twitter"></i></a>  
+                        <a class="rsocial youtube" href="https://www.youtube.com" ><i class="fab fa-youtube"></i></a> 
+                        <a class="rsocial gmail" href="https://www.gmail.com" ><i class="far fa-envelope"></i></a>   
+                </div>
+            </div>
+        </header>
+        <div class="contenido">
+            <div class="articulos">
+                <article class="articulo izquierdo">
+                    <h2>Peliculas</h2>
+                    <h3>GRATIS</h3>
+                    <hr class="parrafo">
+                    <p>Podras ver el contenido que quieras
+                    donde quieras y a la hora que quieras.</p>
+                    <img src="{% static 'core/'%}Imagenes/Medio/free.jpg" alt="perro rescatado">
+                </article>
+    
+                <article class="articulo derecho">
+                    <img src="{% static 'core/'%}Imagenes/Medio/pelis-felicidad.jpg" alt="alimento">
+                    <h2>SIGUENOS</h2>
+                    <h3>FINANCIAMIENTO</h3>
+                    <hr class="parrrafo">
+                    <p>Sigue nuestras redes sociales para informarte acerca de las diversas campañas y 
+                        actividades que realizamos para obtener financiamiento para seguir ayudando.</p>     
+                    <form>
+                        <button class="boton-campaña">Campaña</button>
+                    </form>
+                </article>
+            </div>
+        </div>
+
+       
+        <script src="{% static 'core/'%}https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="{% static 'core/'%}app.js"></script>
+    
+        ¡CSS Válido!
+        <p>
+	        <a href="{% static 'core/'%}http://jigsaw.w3.org/css-validator/check/referer">
+		        <img style="border:0;width:88px;height:31px"
+			    src="{% static 'core/'%}//jigsaw.w3.org/css-validator/images/vcss"
+			    alt="¡CSS Válido!" />
+	        </a>
+        </p>
+</body>
+</html>
